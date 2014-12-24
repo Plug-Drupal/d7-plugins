@@ -1,0 +1,19 @@
+{
+    "name": "drupal/d7-plugin",
+    "description": "Base building block for a scalable and extensible plug-in system for PHP components and application framework extensions. Includes discoveries.",
+    "keywords": ["drupal", "plugin", "plugins"],
+    "homepage": "https://drupal.org/project/drupal",
+    "license": "GPL-2.0+",
+    "require": {
+        "php": ">=5.4.2"
+        "doctrine/common": "dev-master#a45d110f71c323e29f41eb0696fa230e3fa1b1b5",
+        "doctrine/annotations": "1.2.*",
+        "symfony/validator": "2.6.*",
+        "symfony/yaml": "2.6.*",
+    },
+    "autoload": {
+        "psr-0": {
+            "Drupal\\Component\\Plugin\\": ""
+        }
+    },
+}
