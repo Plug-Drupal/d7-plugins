@@ -7,8 +7,6 @@
 
 namespace Drupal\Component\Annotation;
 
-use Drupal\Component\Utility\NestedArray;
-
 /**
  * Defines a Plugin annotation object.
  *
@@ -44,7 +42,7 @@ class Plugin implements AnnotationInterface {
       return $value !== NULL;
     });
     $parsed_values = $this->parse($values);
-    $this->definition = NestedArray::mergeDeep($defaults, $parsed_values);
+    $this->definition = drupal_array_merge_deep($defaults, $parsed_values);
   }
 
   /**
